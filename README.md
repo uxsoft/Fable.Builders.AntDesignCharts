@@ -1,4 +1,6 @@
-﻿# Fable.Builders.AntDesignCharts
+# Fable.Builders.AntDesignCharts
+
+<img src="https://buildstats.info/nuget/Fable.Builders.AntDesignCharts" alt="badge"/>
 
 ## Getting Started
 
