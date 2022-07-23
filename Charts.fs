@@ -5,151 +5,151 @@ open Fable.Core.JsInterop
 
 // Plots
 type AreaBuilder() =
-    inherit ChartBuilder("Area", "@ant-design/charts")
+    inherit ChartBuilder(import "Area" "@ant-design/charts")
     
 type BarBuilder() =
-    inherit ChartBuilder("Bar", "@ant-design/charts")
+    inherit ChartBuilder(import "Bar" "@ant-design/charts")
     
 type BulletBuilder() =
-    inherit ChartBuilder("Bullet", "@ant-design/charts")
+    inherit ChartBuilder(import "Bullet" "@ant-design/charts")
     
 type ColumnBuilder() =
-    inherit ChartBuilder("Column", "@ant-design/charts")
+    inherit ChartBuilder(import "Column" "@ant-design/charts")
     
 type FunnelBuilder() =
-    inherit ChartBuilder("Funnel", "@ant-design/charts")
+    inherit ChartBuilder(import "Funnel" "@ant-design/charts")
     
 type HistogramBuilder() =
-    inherit ChartBuilder("Histogram", "@ant-design/charts")
+    inherit ChartBuilder(import "Histogram" "@ant-design/charts")
     
 type LineBuilder() =
-    inherit ChartBuilder("Line", "@ant-design/charts")
+    inherit ChartBuilder(import "Line" "@ant-design/charts")
     
 type BoxBuilder() =
-    inherit ChartBuilder("Box", "@ant-design/charts")
+    inherit ChartBuilder(import "Box" "@ant-design/charts")
     
 type LiquidBuilder() =
-    inherit ChartBuilder("Liquid", "@ant-design/charts")
+    inherit ChartBuilder(import "Liquid" "@ant-design/charts")
     
 type HeatmapBuilder() =
-    inherit ChartBuilder("Heatmap", "@ant-design/charts")
+    inherit ChartBuilder(import "Heatmap" "@ant-design/charts")
     
 type PieBuilder() =
-    inherit ChartBuilder("Pie", "@ant-design/charts")
+    inherit ChartBuilder(import "Pie" "@ant-design/charts")
     
 type GaugeBuilder() =
-    inherit ChartBuilder("Gauge", "@ant-design/charts")
+    inherit ChartBuilder(import "Gauge" "@ant-design/charts")
     
 type ProgressBuilder() =
-    inherit ChartBuilder("Progress", "@ant-design/charts")
+    inherit ChartBuilder(import "Progress" "@ant-design/charts")
     
 type RadarBuilder() =
-    inherit ChartBuilder("Radar", "@ant-design/charts")
+    inherit ChartBuilder(import "Radar" "@ant-design/charts")
     
 type RingProgressBuilder() =
-    inherit ChartBuilder("RingProgress", "@ant-design/charts")
+    inherit ChartBuilder(import "RingProgress" "@ant-design/charts")
     
 type RoseBuilder() =
-    inherit ChartBuilder("Rose", "@ant-design/charts")
+    inherit ChartBuilder(import "Rose" "@ant-design/charts")
     
 type ChordBuilder() =
-    inherit ChartBuilder("Chord", "@ant-design/charts")
+    inherit ChartBuilder(import "Chord" "@ant-design/charts")
     
 type ScatterBuilder() =
-    inherit ChartBuilder("Scatter", "@ant-design/charts")
+    inherit ChartBuilder(import "Scatter" "@ant-design/charts")
     
 type TinyAreaBuilder() =
-    inherit ChartBuilder("TinyArea", "@ant-design/charts")
+    inherit ChartBuilder(import "TinyArea" "@ant-design/charts")
     
 type TinyColumnBuilder() =
-    inherit ChartBuilder("TinyColumn", "@ant-design/charts")
+    inherit ChartBuilder(import "TinyColumn" "@ant-design/charts")
     
 type DualAxesBuilder() =
-    inherit ChartBuilder("DualAxes", "@ant-design/charts")
+    inherit ChartBuilder(import "DualAxes" "@ant-design/charts")
     
 type TinyLineBuilder() =
-    inherit ChartBuilder("TinyLine", "@ant-design/charts")
+    inherit ChartBuilder(import "TinyLine" "@ant-design/charts")
     
 type WaterfallBuilder() =
-    inherit ChartBuilder("Waterfall", "@ant-design/charts")
+    inherit ChartBuilder(import "Waterfall" "@ant-design/charts")
     
 type WordCloudBuilder() =
-    inherit ChartBuilder("WordCloud", "@ant-design/charts")
+    inherit ChartBuilder(import "WordCloud" "@ant-design/charts")
     
 type SunburstBuilder() =
-    inherit ChartBuilder("Sunburst", "@ant-design/charts")
+    inherit ChartBuilder(import "Sunburst" "@ant-design/charts")
     
 type StockBuilder() =
-    inherit ChartBuilder("Stock", "@ant-design/charts")
+    inherit ChartBuilder(import "Stock" "@ant-design/charts")
     
 type RadialBarBuilder() =
-    inherit ChartBuilder("RadialBar", "@ant-design/charts")
+    inherit ChartBuilder(import "RadialBar" "@ant-design/charts")
     
 type SankeyBuilder() =
-    inherit ChartBuilder("Sankey", "@ant-design/charts")
+    inherit ChartBuilder(import "Sankey" "@ant-design/charts")
     
 type TreemapBuilder() =
-    inherit ChartBuilder("Treemap", "@ant-design/charts")
+    inherit ChartBuilder(import "Treemap" "@ant-design/charts")
     
 type ViolinBuilder() =
-    inherit ChartBuilder("Violin", "@ant-design/charts")
+    inherit ChartBuilder(import "Violin" "@ant-design/charts")
     
 type VennBuilder() =
-    inherit ChartBuilder("Venn", "@ant-design/charts")
+    inherit ChartBuilder(import "Venn" "@ant-design/charts")
     
 type CirclePackingBuilder() =
-    inherit ChartBuilder("CirclePacking", "@ant-design/charts")
+    inherit ChartBuilder(import "CirclePacking" "@ant-design/charts")
     
 type FacetBuilder() =
-    inherit ChartBuilder("Facet", "@ant-design/charts")
+    inherit ChartBuilder(import "Facet" "@ant-design/charts")
     
 type MultiViewBuilder() =
-    inherit ChartBuilder("MultiView", "@ant-design/charts")
+    inherit ChartBuilder(import "MultiView" "@ant-design/charts")
     
 type MixBuilder() =
-    inherit ChartBuilder("Mix", "@ant-design/charts")
+    inherit ChartBuilder(import "Mix" "@ant-design/charts")
     
 type BidirectionalBarBuilder() =
-    inherit ChartBuilder("BidirectionalBar", "@ant-design/charts")
+    inherit ChartBuilder(import "BidirectionalBar" "@ant-design/charts")
     
 // Graphs
 type OrganizationGraphBuilder() =
-    inherit ChartBuilder("OrganizationGraph", "@ant-design/charts")
+    inherit ChartBuilder(import "OrganizationGraph" "@ant-design/charts")
     
 type RadialTreeGraphBuilder() =
-    inherit ChartBuilder("RadialTreeGraph", "@ant-design/charts")
+    inherit ChartBuilder(import "RadialTreeGraph" "@ant-design/charts")
     
 type FlowAnalysisGraphBuilder() =
-    inherit ChartBuilder("FlowAnalysisGraph", "@ant-design/charts")
+    inherit ChartBuilder(import "FlowAnalysisGraph" "@ant-design/charts")
     
 type DecompositionTreeGraphBuilder() =
-    inherit ChartBuilder("DecompositionTreeGraph", "@ant-design/charts")
+    inherit ChartBuilder(import "DecompositionTreeGraph" "@ant-design/charts")
     
 type FundFlowGraphBuilder() =
-    inherit ChartBuilder("FundFlowGraph", "@ant-design/charts")
+    inherit ChartBuilder(import "FundFlowGraph" "@ant-design/charts")
     
 // Maps
 type DotMapBuilder() =
-    inherit ChartBuilder("DotMap", "@ant-design/charts")
+    inherit ChartBuilder(import "DotMap" "@ant-design/charts")
     
 type GeographicHeatmapBuilder() =
-    inherit ChartBuilder("GeographicHeatmap", "@ant-design/charts")
+    inherit ChartBuilder(import "GeographicHeatmap" "@ant-design/charts")
     
 type GridMapBuilder() =
-    inherit ChartBuilder("GridMap", "@ant-design/charts")
+    inherit ChartBuilder(import "GridMap" "@ant-design/charts")
     
 type HexbinMapBuilder() =
-    inherit ChartBuilder("HexbinMap", "@ant-design/charts")
+    inherit ChartBuilder(import "HexbinMap" "@ant-design/charts")
     
 type PathMapBuilder() =
-    inherit ChartBuilder("PathMap", "@ant-design/charts")
+    inherit ChartBuilder(import "PathMap" "@ant-design/charts")
     
 type FlowMapBuilder() =
-    inherit ChartBuilder("FlowMap", "@ant-design/charts")
+    inherit ChartBuilder(import "FlowMap" "@ant-design/charts")
     
 type AreaMapBuilder() =
-    inherit ChartBuilder("AreaMap", "@ant-design/charts")
+    inherit ChartBuilder(import "AreaMap" "@ant-design/charts")
     
 type ChoroplethMapBuilder() =
-    inherit ChartBuilder("ChoroplethMap", "@ant-design/charts")
+    inherit ChartBuilder(import "ChoroplethMap" "@ant-design/charts")
     
