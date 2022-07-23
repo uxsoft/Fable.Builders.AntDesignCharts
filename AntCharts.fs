@@ -4,6 +4,7 @@ open Fable.Builders.AntDesignCharts.Charts
 
 [<AutoOpen>]
 module AntCharts =
+    // Plots
     let Area = AreaBuilder()
     let Bar = BarBuilder()
     let Bullet = BulletBuilder()
@@ -40,16 +41,20 @@ module AntCharts =
     let MultiView = MultiViewBuilder()
     let Mix = MixBuilder()
     let BidirectionalBar = BidirectionalBarBuilder()
+    
+    // Graphs
     let OrganizationGraph = OrganizationGraphBuilder()
     let RadialTreeGraph = RadialTreeGraphBuilder()
     let FlowAnalysisGraph = FlowAnalysisGraphBuilder()
     let DecompositionTreeGraph = DecompositionTreeGraphBuilder()
     let FundFlowGraph = FundFlowGraphBuilder()
+    
+    // Maps
     let DotMap = DotMapBuilder()
-    let HeatMap = HeatMapBuilder()
+    let GeographicHeatmap = GeographicHeatmapBuilder()
     let GridMap = GridMapBuilder()
     let HexbinMap = HexbinMapBuilder()
-//    let PathMap = PathMapBuilder()
-//    let FlowMap = FlowMapBuilder()
+    let PathMap = PathMapBuilder()
+    let FlowMap = FlowMapBuilder()
     let AreaMap = AreaMapBuilder()
     let ChoroplethMap = ChoroplethMapBuilder()
