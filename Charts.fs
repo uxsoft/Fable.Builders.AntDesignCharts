@@ -151,5 +151,5 @@ type AreaMapBuilder() =
     inherit ChartBuilder(import "AreaMap" "@ant-design/charts")
     
 type ChoroplethMapBuilder() =
-    inherit ChartBuilder(import "ChoroplethMap" "@ant-design/charts")
+    inherit Maps.MapBuilder(import "ChoroplethMap" "@ant-design/charts")
     
