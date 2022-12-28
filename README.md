@@ -4,12 +4,21 @@
 
 ## Getting Started
 
+### Manual Installation
+
 ```bash
 dotnet package add Fable.Builders.AntDesignCharts
 ```
 
 ```bash
 yarn add @ant-design/charts
+```
+
+### Installation with Femto
+
+Use [Femto](https://github.com/Zaid-Ajaj/Femto), then it can install everything for you in one go
+```
+femto install Fable.Builders.AntDesignCharts
 ```
 
 ## Usage

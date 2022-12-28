@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -8,13 +9,17 @@
         <PackageIcon>icon.png</PackageIcon>
         <RepositoryUrl>https://github.com/uxsoft/Fable.Builders.AntDesignCharts</RepositoryUrl>
     </PropertyGroup>
-
+    <PropertyGroup>
+        <PackageTags>fsharp;fable;fable-binding;fable-javascript;react</PackageTags>
+        <NpmDependencies>
+            <NpmPackage Name="@ant-design/charts" Version="gte 1.4.2 lt 2.0.0" ResolutionStrategy="Min"/>
+        </NpmDependencies>
+    </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Core.fs" />
-        <Compile Include="Maps.fs" />
-        <Compile Include="Charts.fs" />
-        <Compile Include="Maps.fs" />
-        <Compile Include="AntCharts.fs" />
+        <Compile Include="Core.fs"/>
+        <Compile Include="Charts.fs"/>
+        <Compile Include="Maps.fs"/>
+        <Compile Include="AntCharts.fs"/>
     </ItemGroup>
     <ItemGroup>
         <Content Include="*.fsproj; **\*.fs">
