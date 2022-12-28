@@ -2,6 +2,7 @@ namespace Fable.Builders.AntDesignCharts
 
 open Fable.Builders.Common
 open Fable.Core
+open System
 
 [<AutoOpen>]
 module Core =
@@ -18,7 +19,7 @@ module Core =
         [<CustomOperation("autoFit")>] member inline _.autoFit (x: DSLElement, v: bool) = x.attr "autoFit" v
         [<CustomOperation("padding")>] member inline _.padding (x: DSLElement, v: int list) = x.attr "padding" v
         [<CustomOperation("appendPadding")>] member inline _.appendPadding (x: DSLElement, v: int list) = x.attr "appendPadding" v
-        [<CustomOperation("renderer")>] member inline _.renderer (x: DSLElement, v: bool) = x.attr "renderer" v
+        [<CustomOperation("renderer")>] member inline _.renderer (x: DSLElement, v: ChartRendered) = x.attr "renderer" v
         [<CustomOperation("pixelRatio")>] member inline _.pixelRatio (x: DSLElement, v: float) = x.attr "pixelRatio" v
         [<CustomOperation("limitInPlot")>] member inline _.limitInPlot (x: DSLElement, v: bool) = x.attr "limitInPlot" v
         [<CustomOperation("locale")>] member inline _.locale (x: DSLElement, v: string) = x.attr "locale" v
@@ -48,6 +49,14 @@ module Core =
         [<CustomOperation("state")>] member inline _.state (x: DSLElement, v: 'v) = x.attr "state" v
         
         // plot components
+        [<CustomOperation("label")>] member inline _.label (x: DSLElement, v: 'T) = x.attr "label" v
+        [<CustomOperation("legend")>] member inline _.legend (x: DSLElement, v: 'T) = x.attr "legend" v
+        [<CustomOperation("tooltip")>] member inline _.tooltip (x: DSLElement, v: 'T) = x.attr "tooltip" v
+
+        // Geometry Style
+        [<CustomOperation("appendPaddings")>] member inline _.appendPaddings (x: DSLElement, v: int list) = x.attr "appendPadding" (v |> Array.ofList)
+        [<CustomOperation("colorFn")>] member inline _.colorFn (x: DSLElement, v: Func<'T, string>) = x.attr "color" v
+
 //        [<CustomOperation("isRange")>] member inline _.isRange (x: DSLElement, v: bool) = x.attr "isRange" v
 //        [<CustomOperation("isRange")>] member inline _.isRange (x: DSLElement, v: bool) = x.attr "isRange" v
 //        [<CustomOperation("isRange")>] member inline _.isRange (x: DSLElement, v: bool) = x.attr "isRange" v
