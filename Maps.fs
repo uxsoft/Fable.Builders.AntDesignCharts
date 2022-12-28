@@ -7,8 +7,8 @@ type DotMapBuilder() =
     inherit ChartBuilder(import "DotMap" "@ant-design/maps")
     
 type HeatMapBuilder() =
-    inherit ChartBuilder(import "HeatMap" "@ant-design/plots")
-    
+    inherit ChartBuilder(import "Heatmap" "@ant-design/plots")
+
 type GridMapBuilder() =
     inherit ChartBuilder(import "GridMap" "@ant-design/maps")
     
