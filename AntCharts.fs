@@ -1,6 +1,7 @@
 ﻿namespace Fable.Builders.AntDesignCharts
 
 open Fable.Builders.AntDesignCharts.Charts
+open Fable.Builders.AntDesignCharts.Maps
 
 [<AutoOpen>]
 module AntCharts =
@@ -51,10 +52,8 @@ module AntCharts =
     
     // Maps
     let DotMap = DotMapBuilder()
-    let GeographicHeatmap = GeographicHeatmapBuilder()
+    //let GeographicHeatmap = GeographicHeatmapBuilder()
     let GridMap = GridMapBuilder()
     let HexbinMap = HexbinMapBuilder()
-    let PathMap = PathMapBuilder()
-    let FlowMap = FlowMapBuilder()
     let AreaMap = AreaMapBuilder()
     let ChoroplethMap = ChoroplethMapBuilder()

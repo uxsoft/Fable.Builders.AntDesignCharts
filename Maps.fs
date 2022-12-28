@@ -1,19 +1,23 @@
-﻿namespace Fable.Builders.AntDesignCharts
+module Fable.Builders.AntDesignCharts.Maps
 
-open Fable.Builders.Common
-open Fable.Core
-
-module Maps =
-
-    type MapConfig =
-        { ``type``: string
-          style: string
-          center: float array
-          zoom: int
-          pitch: int }
+open Core
+open Fable.Core.JsInterop
     
-    type MapBuilder(import: obj) =
-        inherit ReactBuilder(import)
-        
-        [<CustomOperation("map")>]
-        member inline _.map (x: DSLElement, v: MapConfig) = x.attr "map" v
+type DotMapBuilder() =
+    inherit ChartBuilder(import "DotMap" "@ant-design/maps")
+    
+type HeatMapBuilder() =
+    inherit ChartBuilder(import "HeatMap" "@ant-design/maps")
+    
+type GridMapBuilder() =
+    inherit ChartBuilder(import "GridMap" "@ant-design/maps")
+    
+type HexbinMapBuilder() =
+    inherit ChartBuilder(import "HexbinMap" "@ant-design/maps")
+
+type AreaMapBuilder() =
+    inherit ChartBuilder(import "AreaMap" "@ant-design/maps")
+    
+type ChoroplethMapBuilder() =
+    inherit ChartBuilder(import "ChoroplethMap" "@ant-design/maps")
+    

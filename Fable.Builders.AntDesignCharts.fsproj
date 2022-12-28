@@ -13,6 +13,7 @@
         <Compile Include="Core.fs" />
         <Compile Include="Maps.fs" />
         <Compile Include="Charts.fs" />
+        <Compile Include="Maps.fs" />
         <Compile Include="AntCharts.fs" />
     </ItemGroup>
     <ItemGroup>

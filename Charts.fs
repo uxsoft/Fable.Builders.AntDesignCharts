@@ -127,29 +127,4 @@ type DecompositionTreeGraphBuilder() =
     
 type FundFlowGraphBuilder() =
     inherit ChartBuilder(import "FundFlowGraph" "@ant-design/charts")
-    
-// Maps
-type DotMapBuilder() =
-    inherit ChartBuilder(import "DotMap" "@ant-design/charts")
-    
-type GeographicHeatmapBuilder() =
-    inherit ChartBuilder(import "GeographicHeatmap" "@ant-design/charts")
-    
-type GridMapBuilder() =
-    inherit ChartBuilder(import "GridMap" "@ant-design/charts")
-    
-type HexbinMapBuilder() =
-    inherit ChartBuilder(import "HexbinMap" "@ant-design/charts")
-    
-type PathMapBuilder() =
-    inherit ChartBuilder(import "PathMap" "@ant-design/charts")
-    
-type FlowMapBuilder() =
-    inherit ChartBuilder(import "FlowMap" "@ant-design/charts")
-    
-type AreaMapBuilder() =
-    inherit ChartBuilder(import "AreaMap" "@ant-design/charts")
-    
-type ChoroplethMapBuilder() =
-    inherit Maps.MapBuilder(import "ChoroplethMap" "@ant-design/charts")
-    
+        
