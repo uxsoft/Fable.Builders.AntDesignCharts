@@ -2,6 +2,7 @@ module Fable.Builders.AntDesignCharts.Charts
 
 open Core
 open Fable.Core.JsInterop
+open Fable.Builders.Common
 
 // Plots
 type AreaBuilder() =
@@ -75,7 +76,9 @@ type WaterfallBuilder() =
     
 type WordCloudBuilder() =
     inherit ChartBuilder(import "WordCloud" "@ant-design/charts")
-    
+    [<CustomOperation("wordField")>] member inline _.wordField (x: DSLElement, v: string) = x.attr "wordField" v
+    [<CustomOperation("weightField")>] member inline _.weightField (x: DSLElement, v: string) = x.attr "weightField" v
+  
 type SunburstBuilder() =
     inherit ChartBuilder(import "Sunburst" "@ant-design/charts")
     
